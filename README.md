@@ -144,11 +144,6 @@ howmany(tokens, "l")("hello");
 # Problem 7
 Write a function that counts the number of times a certain token has appeared in the input sequence so far.
 
-```
-def howmany(seq, atom){
-  return round(one * aggregate(mask_ag, indicator(seq==atom))) if contains(seq, atom) else "0";
-  }
-```
 
 # Problem 8
 Write a function that returns the minimum value in the sequnce only of the tokens seen so far.
