@@ -144,6 +144,16 @@ howmany(tokens, "l")("hello");
 # Problem 7
 Write a function that counts the number of times a certain token has appeared in the input sequence so far.
 
+```
+def howmany(s,c) {return selector_width(select(s,c,==));}
+     console function: howmany(s, c)
+howmany(tokens, "a")("hello");
+         =  [0]*5 (ints)
+howmany(tokens, "h")("hello");
+         =  [1]*5 (ints)
+howmany(tokens, "l")("hello");
+         =  [2]*5 (ints)
+```
 
 # Problem 8
 Write a function that returns the minimum value in the sequnce only of the tokens seen so far.
@@ -153,7 +163,11 @@ def minseq(seq) {
   return load_from_location(sorted, 0);
   }
 
+set example "ababcabab";
+sorted = sort(tokens, tokens);
+     s-op: sorted
+         Example: sorted("ababcabab") = [a, a, a, a, b, b, b, b, c] (strings)
 minseq(tokens);
      s-op: out
-         Example: out("hello") = [e]*5 (strings)
+         Example: out("ababcabab") = [a]*9 (strings)
 ```
